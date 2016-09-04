@@ -1,6 +1,6 @@
 <h1>Tweets#index</h1>
 <div>
-	<%= form_for (@tweet) do |f| %>
+	<%= form_for @tweet do |f| %>
 		<%= f.text_area :body %>
 		<%= f.submit %>
 	<% end %>
@@ -10,4 +10,5 @@
 		<div>
 			<%= tweet.body %>
 		</div>
+	<% end %>
 </div>

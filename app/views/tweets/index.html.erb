@@ -1,1 +1,13 @@
 <h1>Tweets#index</h1>
+<div>
+	<%= form_for (@tweet) do |f| %>
+		<%= f.text_area :body %>
+		<%= f.submit %>
+	<% end %>
+</div>
+<div>
+	<% @tweets.each do |tweet|%>
+		<div>
+			<%= tweet.body %>
+		</div>
+</div>
